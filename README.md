@@ -1,5 +1,5 @@
 ## Aprender programação. Passos iniciais Front-end!
-#### Aprender:
+# Aprender:
 - HTML
 - CSS
 - JavaScript
