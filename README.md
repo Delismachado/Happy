@@ -21,7 +21,7 @@ mas muito importante: Mobile First! Mesmo na Trilha Discovery fizemos um Layout
 lindo e responsivo. 
 <img src="./public/code/login-page.png">
 
-#### Começando a com JavaScript na aplicação!
+#### Começando com JavaScript na aplicação!
 <p> Na pagina de orfanatos, usamos uma blioteca para carregar o map e inciamos o uso
 de funções javascript.</p>
 <img src="./public/code/orfanatos-map.png">

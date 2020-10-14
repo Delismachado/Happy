@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lar das meninas | Happy</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+
+
+    <link rel="icon" href="./public/images/logo-icon.png">
+
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./public/css/main.css">
+    <link rel="stylesheet" href="./public/css/animations.css">
+    <link rel="stylesheet" href="./public/css/page-orphanege.css">
+</head>
+
+<body>
+
+    <div id="page-orphanege">
+        <aside class="animate-right sidebar">
+            <img src="./public/images/map-marker.svg" alt="Happy">
+
+            <footer>
+                <button onclick="history.back()">
+                    <img src="./public/images/arrow-back.svg" alt="Voltar">
+                </button>
+            </footer>
+
+        </aside>
+
+        <main class="animate-appear with-sidebar">
+
+            <div class="orphanege-details">
+                <img src="./public/images/home.jpg" alt="">
+
+                <div class="images">
+                    <button onclick="selectImage(event)" class="active" type="button">
+                        <img src="https://images.unsplash.com/photo-1576322649811-13dc99a3018d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="">
+                    </button>
+
+                    <button onclick="selectImage(event)" type="button">
+                        <img src="https://images.unsplash.com/photo-1553323855-cc1abf1930d2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80" alt="">
+                    </button>
+
+                    <button onclick="selectImage(event)" type="button">
+                        <img src="https://images.unsplash.com/photo-1548463870-e32900ea6bb4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1380&q=80" alt="">
+                    </button>
+
+                    <button onclick="selectImage(event)" type="button">
+                        <img src="https://images.unsplash.com/photo-1600107092447-e565c1a97463?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=675&q=80" alt="">
+                    </button>
+
+                    <button onclick="selectImage(event)" type="button">
+                        <img src="https://images.unsplash.com/photo-1583804310271-87da237b02b0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=677&q=80" alt="">
+                    </button>
+
+                    <button onclick="selectImage(event)" type="button">
+                        <img src="https://images.unsplash.com/photo-1585809153709-5e5500f2fdb0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=675&q=80" alt="">
+                    </button>
+                </div>
+
+                <div class="orphanege-details-content">
+                    <h1>Lar das meninas</h1>
+                    <p>Presta assistência a crianças de 06 a 15 anos que se encontre em situação de risco e/ou vulnerabilidade social</p>
+
+                    <div class="map-container">
+                        <div id="mapid"></div>
+
+                        <footer>
+                            <a href="">Ver rotas no Google Maps</a>
+                        </footer>
+                    </div>
+
+                    <hr>
+
+                    <h2>Instruções para visita</h2>
+                    <p>Venha como se sentir a vontade e traga muito amor e paciênca para dar</p>
+
+                    <div class="open-details">
+                        <div class="hour">
+                            <img src="./public/images/clock.svg" alt="horário"> Horário de visita das 8h às 18h
+                        </div>
+                        <div class="open-on-weekends">
+                            <img src="./public/images/info.svg" alt="informações"> Abertos nos finais de semana
+                        </div>
+                    </div>
+
+                    <button class="primary-button" type="button">
+                        <img src="./public/images/whatsapp.svg" alt="Contato">
+                        Entrar em contato
+                    </button>
+
+                </div>
+
+            </div>
+
+        </main>
+
+
+
+    </div>
+
+    <script src="./public/scripts/page-orphanege.js"></script>
+
+</body>
+
+</html>
