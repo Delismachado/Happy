@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="./public/css/sidebar.css">
     <link rel="stylesheet" href="./public/css/map.css">
     <link rel="stylesheet" href="./public/css/forms.css">
+    <link rel="stylesheet" href="./public/css/button.css">
     <link rel="stylesheet" href="./public/css/page-create-orphanege.css">
 </head>
 
@@ -44,6 +45,8 @@
 
                     <div class="map-container">
                         <div id="mapid"></div>
+                        <input type="hidden" name="lat">
+                        <input type="hidden" name="lng">
 
                         <footer>
                             <a href="#" id="select-point">
@@ -54,23 +57,63 @@
 
                     <div class="input-block">
                         <label for="name">Nome</label>
-                        <input id="name" name="name">
+                        <input id="name" name="name" required>
                     </div>
 
                     <div class="input-block">
                         <label for="about">Sobre <span>Máximo de 300 caracteres</span></label>
-                        <textarea id="about" name="about"></textarea>
+                        <textarea id="about" name="about" required></textarea>
                     </div>
 
                     <div class="input-block">
                         <label for="whatsapp">Número do whatsapp</label>
-                        <input id="whatsapp" name="whatsapp">
+                        <input id="whatsapp" name="whatsapp" required>
+                    </div>
+
+                    <div class="input-block images">
+                        <label for="images">Foto</label>
+
+                        <div class="images-upload" id="images">
+                            <div class="new-upload">
+                                <input name="images" placeholder="Cole o link da foto aqui" required>
+                                <span onclick="deleteField(event)">
+                                     <img src="./public/images/remove.svg" alt="Remover foto">
+                                </span>
+                            </div>
+
+                        </div>
+                        <button onclick="addPhotoField()" type="button">
+                            <img src="./public/images/add-image.svg" alt="Nova imagem">
+                        </button>
                     </div>
 
                 </fieldset>
 
                 <fieldset>
                     <legend>Visitação</legend>
+
+                    <div class="input-block">
+                        <label for="instructions">Instruções</label>
+                        <textarea id="instructions" name="instructions" required></textarea>
+                    </div>
+
+                    <div class="input-block">
+                        <label for="opening_hours">Horário das visitas</label>
+                        <input id="opening_hours" name="opening_hours" required>
+                    </div>
+
+                    <div class="input-block">
+                        <label for="open_on_weekends">Atende fim de semana?</label>
+                        <input type="hidden" id="open_on_weekends" name="open_on_weekends" value="1" required>
+
+                        <div class="button-select">
+                            <button data-value="1" onclick="toggleSelect(event)" type="button" class="active">Sim</button>
+                            <button data-value="0" onclick="toggleSelect(event)" type="button">Não</button>
+                        </div>
+
+                        <button type="submit" class="primary-button ">Confirmar</button>
+                    </div>
+
                 </fieldset>
             </form>
         </main>
