@@ -11,7 +11,7 @@
 precismaos do CSS para estilizar o HTML. E para melhorar/possibilitar o
 funcionamento de nossas paginas usamos o JavaScript</p>
 <link href="https://rocketseat.com.br/">
-<img src="/code/initial-page.png">
+<img src="./public/code/initial-page.png">
 
 
 
@@ -19,12 +19,12 @@ funcionamento de nossas paginas usamos o JavaScript</p>
 <p>Um ponto muito positivo desta edição está num detalhe que parece pequeno,
 mas muito importante: Mobile First! Mesmo na Trilha Discovery fizemos um Layout
 lindo e responsivo. 
-<img src="/code/login-page.png">
+<img src="./public/code/login-page.png">
 
 #### Começando com JavaScript na aplicação!
 <p> Na pagina de orfanatos, usamos uma blioteca para carregar o map e inciamos o uso
 de funções javascript.</p>
-<img src="/code/orfanatos-map.png">
+<img src="./public/code/orfanatos-map.png">
 
 
 #### Começando o backend da aplicação!
