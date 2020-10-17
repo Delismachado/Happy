@@ -3,6 +3,10 @@
     min-height: 100vw;
 }
 
+.with-sidebar {
+    padding-left: 110px;
+}
+
 main {
     flex: 1;
 }

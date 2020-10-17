@@ -11,6 +11,12 @@
     align-items: center;
     justify-content: center;
     transition: backgroud-color .2s;
+    text-decoration: none;
+}
+
+.primary-button:focus {
+    outline: none;
+    border: 1px solid #106e3a;
 }
 
 .primary-button:hover {
@@ -32,6 +38,12 @@
     border: 1px solid #d3e2e5;
     color: #5c8599;
     cursor: pointer;
+}
+
+.button-select button:focus {
+    outline: none;
+    border: 1px solid #56e3ff;
+    color: 37c77f;
 }
 
 .button-select button.active {

@@ -9,7 +9,9 @@ const server = express();
 
 server
 
-    .use(express.static('public'))
+    .use(express.urlencoded({ extended: true }))
+
+.use(express.static('public'))
 
 .set('views', path.join(__dirname, "views"))
     .set('view engine', 'hbs')
@@ -19,5 +21,6 @@ server
     .get('/orphanege', pages.orphanege)
     .get('/orphaneges', pages.orphaneges)
     .get('/create-orphanege', pages.createOrphanege)
+    .post('/saveOrphanege', pages.saveOrphanege)
 
 server.listen(5500);

@@ -7,8 +7,15 @@ const options = {
     scrollWheelZoom: false,
     zoomControl: false
 }
-const map = L.map('mapid', options).setView([-25.496052, -49.2070315], 16);
 
+const lat = document.querySelector('span[data-lat]').dataset.lat
+const lng = document.querySelector('span[data-lng]').dataset.lng
+
+
+const map = L.map('mapid', options).setView([lat, lng], 20);
+const map = L.map('mapid').setView([-25.496052, -49.2070315], 16);
+
+//L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {}).addTo(map);
 L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
 
     id: 'mapbox/streets-v11',
@@ -25,8 +32,10 @@ const icon = L.icon({
 })
 
 
+
+
 L
-    .marker([-25.496052, -49.2070315], { icon })
+    .marker([lat, lng], { icon })
     .addTo(map)
 
 

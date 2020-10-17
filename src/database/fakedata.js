@@ -1,46 +1,33 @@
 module.exports = [{
         id: 1,
-        lat: "-25.496052",
-        lng: "-49.2070315",
+        lat: "-22.8745251",
+        lng: "-43.465333",
         name: "Lar das meninas",
-        descriptions: "Presta assistência a crianças de 06 a 15 anos que estão em situação de vulnerabilidade",
+        description: "Presta assistência a crianças de 06 a 15 anos que se encontre em situação de risco e/ou vulnerabilidade social",
         images: [
-            "https://images.unsplash.com/photo-1548463870-e32900ea6bb4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1380&q=80",
-
-
+            "https://images.unsplash.com/photo-1602636403821-e43d50123cb7?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjF9",
+            "https://images.unsplash.com/photo-1595009503377-e3be116106b6?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjF9",
+            "https://images.unsplash.com/photo-1597791366640-e91489aaf430?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjF9",
+            "https://images.unsplash.com/photo-1595967783875-c371f35d8049?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjF9"
         ],
-        instruções: "Venha com vontade e traga muito amor e carinho para nossas crianças",
-        opening_hours: "horário de visita das 08h às 18h",
-        open_on_weekends: "1"
+        instructions: "Venha como se sentir a vontade e traga muito amor e paciência para dar.",
+        openingHours: "Horário de visitas Das 18 até 8h",
+        openOnWeekends: "1"
     },
-
     {
         id: 2,
-        lat: "-25.496052",
-        lng: "-49.2090315",
+        lat: "-22.8745251",
+        lng: "-43.475333",
         name: "Lar dos meninos",
-        descriptions: "Presta assistência a crianças de 06 a 15 anos que estão em situação de vulnerabilidade",
+        description: "Presta assistência a crianças de 06 a 15 anos que se encontre em situação de risco e/ou vulnerabilidade social",
         images: [
-            "https://images.unsplash.com/photo-1583804310271-87da237b02b0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=677&q=80"
-
+            "https://images.unsplash.com/photo-1602636403821-e43d50123cb7?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjF9",
+            "https://images.unsplash.com/photo-1595009503377-e3be116106b6?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjF9",
+            "https://images.unsplash.com/photo-1597791366640-e91489aaf430?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjF9",
+            "https://images.unsplash.com/photo-1595967783875-c371f35d8049?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjF9"
         ],
-        instruções: "Venha com vontade e traga muito amor e carinho para nossas crianças",
-        opening_hours: "horário de visita das 08h às 18h",
-        open_on_weekends: "1"
-    },
-
-    {
-        id: 3,
-        lat: "-25.496052",
-        lng: "-49.2050315",
-        name: "Lar acolhedor",
-        descriptions: "Presta assistência a crianças de 06 a 15 anos que estão em situação de vulnerabilidade",
-        images: [
-            "https://images.unsplash.com/photo-1600107092447-e565c1a97463?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=675&q=80"
-
-        ],
-        instruções: "Venha com vontade e traga muito amor e carinho para nossas crianças",
-        opening_hours: "horário de visita das 08h às 18h",
-        open_on_weekends: "1"
-    },
+        instructions: "Venha como se sentir a vontade e traga muito amor e paciência para dar.",
+        openingHours: "Horário de visitas Das 18 até 8h",
+        openOnWeekends: "0"
+    }
 ]

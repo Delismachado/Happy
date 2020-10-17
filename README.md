@@ -33,4 +33,7 @@ de funções javascript.</p>
 - npm
 - express
 - nodemon
+- hbs
+#### Configurando o banco de dados! 
+- sqlite
 

@@ -1,7 +1,10 @@
-#page-orphanege {
-    width: 100%;
-    min-height: 100vw;
+#page-orphanage {
     display: flex;
+    min-height: 100vh;
+}
+
+.with-sidebar {
+    padding-left: 110px;
 }
 
 main {
@@ -10,7 +13,7 @@ main {
 
 .orphanege-details {
     width: 70rem;
-    margin: 6.4rem;
+    margin: 6.4rem auto;
     background: white;
     border: 1px solid #d3e2e5;
     border-radius: 2rem;
@@ -91,15 +94,16 @@ main {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 2rem;
+    line-height: 1.5;
+}
+
+.open-details div {
+    padding: 3.2rem 2.4rem;
 }
 
 .open-details img {
     display: block;
     margin-bottom: 2rem;
-}
-
-.open-details div {
-    padding: 3.2rem 2.4rem;
 }
 
 .open-details .hour {
@@ -109,9 +113,18 @@ main {
     color: #5c8599;
 }
 
-.open-details .open-on-weekends {
-    background: linear-gradient(149.97deg, #e6f7fb 8.13%, #ffffff 92.67%);
-    border: 1px solid #b3dae2;
+.open-details div.open-on-weekends {
     border-radius: 20px;
+}
+
+.open-details div.open-on-weekends.open {
+    background: linear-gradient(150deg, #edfff6 10%, #fafffe 92%);
+    border: 1px solid #b3dae2;
     color: #37c77f;
+}
+
+.open-details div.open-on-weekends.closed {
+    background: linear-gradient(150deg, #fcf0f4 10%, #fffdfd 92%);
+    border: 1px solid #ffbcd4;
+    color: #ff669d;
 }

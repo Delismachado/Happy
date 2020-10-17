@@ -82,9 +82,8 @@ function toggleSelect(Event) {
 
 
     //colocar class active
-
     const button = Event.currentTarget
-    button.classListadd('active')
+    button.classList.add('active')
 
     //atualizar input
     const input = document.querySelector('[name="open_on_weekends"]')

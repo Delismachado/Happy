@@ -1,5 +1,3 @@
-const { orphanege } = require("../../src/pages");
-
 const map = L.map('mapid').setView([-25.496052, -49.2070315], 16);
 
 L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
@@ -37,9 +35,9 @@ const orphanegesSpan = document.querySelectorAll('.orphaneges span')
 orphanegesSpan.forEach(span => {
     const orphanege = {
         id: span.dataset.id,
-        name = span.dataset.name,
-        lat = span.dataset.lat,
-        lng = span.dataset.lng
+        name: span.dataset.name,
+        lat: span.dataset.lat,
+        lng: span.dataset.lng
     }
 
     addMarker(orphanege)

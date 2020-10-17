@@ -1,15 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lar das meninas | Happy</title>
+    <title>{{orphanege.name}}| Happy</title>
 
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin="" />
     <!-- Make sure you put this AFTER Leaflet's CSS -->
-    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+        crossorigin=""></script>
 
 
     <link rel="icon" href="/images/logo-icon.png">
@@ -40,64 +44,63 @@
         <main class="animate-appear with-sidebar">
 
             <div class="orphanege-details">
-                <img src="/images/home.jpg" alt="">
+                <img src="{{orphanege.firstImage}}" alt="{{orphanege.name}}" />
 
                 <div class="images">
-                    <button onclick="selectImage(event)" class="active" type="button">
-                        <img src="https://images.unsplash.com/photo-1576322649811-13dc99a3018d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="">
+                    <button onclick="selectImage(event)" class='active' type="button">
+                        <img src="{{orphanege.firstImage}}" alt="{{orphanege.name}}">
                     </button>
-
+                    {{#each orphanege.images}}
                     <button onclick="selectImage(event)" type="button">
-                        <img src="https://images.unsplash.com/photo-1553323855-cc1abf1930d2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80" alt="">
+                        <img src="{{this}}" alt="{{orphanege.name}}">
                     </button>
-
-                    <button onclick="selectImage(event)" type="button">
-                        <img src="https://images.unsplash.com/photo-1548463870-e32900ea6bb4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1380&q=80" alt="">
-                    </button>
-
-                    <button onclick="selectImage(event)" type="button">
-                        <img src="https://images.unsplash.com/photo-1600107092447-e565c1a97463?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=675&q=80" alt="">
-                    </button>
-
-                    <button onclick="selectImage(event)" type="button">
-                        <img src="https://images.unsplash.com/photo-1583804310271-87da237b02b0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=677&q=80" alt="">
-                    </button>
-
-                    <button onclick="selectImage(event)" type="button">
-                        <img src="https://images.unsplash.com/photo-1585809153709-5e5500f2fdb0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=675&q=80" alt="">
-                    </button>
+                    {{/each}}
                 </div>
 
                 <div class="orphanege-details-content">
-                    <h1>Lar das meninas</h1>
-                    <p>Presta assistência a crianças de 06 a 15 anos que se encontre em situação de risco e/ou vulnerabilidade social</p>
+                    <h1>{{orphanege.name}}</h1>
+                    <p>{{orphanege.about}}</p>
 
                     <div class="map-container">
                         <div id="mapid"></div>
+                        <input type="hidden" name="lat">
+                        <input type="hidden" name="lng">
 
                         <footer>
-                            <a href="">Ver rotas no Google Maps</a>
+                            <a href="#" id="select-point">
+                                Clique no mapa para ver a localização
+                            </a>
                         </footer>
                     </div>
 
                     <hr>
 
                     <h2>Instruções para visita</h2>
-                    <p>Venha como se sentir a vontade e traga muito amor e paciênca para dar</p>
+                    <p>{{orphanege.instructions}}</p>
 
                     <div class="open-details">
                         <div class="hour">
-                            <img src="/images/clock.svg" alt="horário"> Horário de visita das 8h às 18h
+                            <img src="/images/clock.svg" alt="horário">
+                            {{orphanege.opening_hours}}
                         </div>
-                        <div class="open-on-weekends">
-                            <img src="/images/info.svg" alt="informações"> Abertos nos finais de semana
+                        {{#if orphanege.open-on-weekends}}
+                        <div class="open-on-weekends open">
+                            <img src="/images/info.svg" alt="informações">
+                            Atende no final de semana
                         </div>
+                        {{else}}
+                        <div class="open-on-weekends closed">
+                            <img src="/images/info-red.svg" alt="informações">
+                            Não atende no final de semana
+                        </div>
+                        {{/if}}
                     </div>
 
-                    <button class="primary-button" type="button">
+                    <a href="https://api.whatsapp.com/send?1=pt_BR&phone={{orphanege.whatsapp}}" target="_blank"
+                        class="primary-button" type="button">
                         <img src="/images/whatsapp.svg" alt="Contato">
                         Entrar em contato
-                    </button>
+                    </a>
 
                 </div>
 

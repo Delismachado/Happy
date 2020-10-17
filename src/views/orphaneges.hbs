@@ -37,19 +37,21 @@
         <div id="mapid" class="animate-appear"></div>
 
         <div class="orphaneges">
-            {{#each orphanege}} 
+            {{#each orphaneges}} 
 
                 <span hidden
                     data-id="{{this.id}}"
                     data-name="{{this.name}}"
                     data-lat="{{this.lat}}"
-                    data-lng="{{this.lng}}"
+                    data-lng="{{this.lng}}"                    
                 
-                ></span>        
+                ></span>         
         
             {{/each}}
 
         </div>
+
+        
 
         
 
