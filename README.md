@@ -1,6 +1,4 @@
-## Aprender programação. Passos iniciais Front-end!
-### Conhecimento é poder! 
-
+### O NLW é um evento com muito código, desafios, networking com o objetivo de te levar para o próximo nível. Um evento gratuito da rocketseat que te ajuda a dominar uma tecnologia.
 
 
 ### Dia 01:
