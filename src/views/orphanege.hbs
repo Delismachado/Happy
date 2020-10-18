@@ -42,9 +42,8 @@
         </aside>
 
         <main class="animate-appear with-sidebar">
-
             <div class="orphanege-details">
-                <img src="{{orphanege.firstImage}}" alt="{{orphanege.name}}" />
+                <img src="{{orphanege.firstImage}}" alt="{{orphanege.name}}">
 
                 <div class="images">
                     <button onclick="selectImage(event)" class='active' type="button">
@@ -63,13 +62,12 @@
 
                     <div class="map-container">
                         <div id="mapid"></div>
-                        <input type="hidden" name="lat">
-                        <input type="hidden" name="lng">
+                        <span hidden data-lat="{{orphanege.lat}}" data-lng="{{orphanege.lng}}"></span>
+
 
                         <footer>
-                            <a href="#" id="select-point">
-                                Clique no mapa para ver a localização
-                            </a>
+                            <a href="https://maps.google.com/mobile?q={{orphanege.lat}},{{orphanege.lng}}&z={15}"
+                                target="_blank">Ver rotas no Google Maps</a>
                         </footer>
                     </div>
 
@@ -80,7 +78,7 @@
 
                     <div class="open-details">
                         <div class="hour">
-                            <img src="/images/clock.svg" alt="horário">
+                            <img src="/images/clock.svg" alt="Horários">
                             {{orphanege.opening_hours}}
                         </div>
                         {{#if orphanege.open-on-weekends}}
@@ -96,20 +94,15 @@
                         {{/if}}
                     </div>
 
-                    <a href="https://api.whatsapp.com/send?1=pt_BR&phone={{orphanege.whatsapp}}" target="_blank"
-                        class="primary-button" type="button">
-                        <img src="/images/whatsapp.svg" alt="Contato">
-                        Entrar em contato
+                    <a href="https://api.whatsapp.com/send?l=pt_BR&phone={{orphanege.whatsapp}}&text=Oi, quero agendar uma visita no {{orphanege.name}}"
+                        type="button" class="primary-button" target="_blank">
+                        <img src="/images/whatsapp.svg" alt="Chamar no Whatsapp">Chamar no Whatsapp
                     </a>
 
                 </div>
 
             </div>
-
         </main>
-
-
-
     </div>
 
     <script src="/scripts/page-orphanege.js"></script>

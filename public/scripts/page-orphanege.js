@@ -1,5 +1,3 @@
-const { orphanege } = require("../../src/pages");
-
 const options = {
     draggin: false,
     touchZoom: false,
@@ -8,21 +6,12 @@ const options = {
     zoomControl: false
 }
 
-const lat = document.querySelector('span[data-lat]').dataset.lat
-const lng = document.querySelector('span[data-lng]').dataset.lng
+const lat = document.querySelector("span[data-lat]").dataset.lat;
+const lng = document.querySelector("span[data-lng]").dataset.lng;
 
+const map = L.map('mapid', options).setView([lat, lng], 15);
 
-const map = L.map('mapid', options).setView([lat, lng], 20);
-const map = L.map('mapid').setView([-25.496052, -49.2070315], 16);
-
-//L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {}).addTo(map);
-L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
-
-    id: 'mapbox/streets-v11',
-    tileSize: 512,
-    zoomOffset: -1,
-    accessToken: 'pk.eyJ1IjoiZGVybGltYWNoYWRvIiwiYSI6ImNrZzhqZndwNzBod2YzMHBnNnpzY204OW0ifQ.KahS8uNyC9OkV4ZHJi1sTg'
-}).addTo(map);
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {}).addTo(map);
 
 const icon = L.icon({
     iconUrl: ".././images/map-marker.svg",
@@ -40,19 +29,17 @@ L
 
 
 function selectImage(event) {
-    const button = event.currentTarget
+    const button = event.currentTarget;
+    const buttons = document.querySelectorAll(".images button"); /* como no css! */
 
-    const buttons = document.querySelectorAll(".images button")
-    buttons.forEach(removeActiveClass)
+    buttons.forEach(removeClass);
 
-    function removeActiveClass(button) {
-        button.classList.remove("active")
+    function removeClass(button) {
+        button.classList.remove("active");
     }
+    button.classList.add("active");
 
-    const image = button.children[0]
-    const imageContainer = document.querySelector(".orphanege-details > img")
-
-    imageContainer.src = image.src
-
-    button.classList.add('active')
+    const image = button.children[0];
+    const imageContainer = document.querySelector(".orphanege-details > img");
+    imageContainer.src = image.src;
 }
