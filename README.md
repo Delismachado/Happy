@@ -1,39 +1,51 @@
 ## Aprender programação. Passos iniciais Front-end!
 ### Conhecimento é poder! 
-#### Aprender:
+
+
+
+### Dia 01:
+- Iniciando o projeto com: 
 - HTML
 - CSS
 - JavaScript
-### Praticar em um Projeto 
-(Para dicas de projetos, veja os canais: Rocketseat, Felipe Deschampes, Alura online)!
-#### Pagina inical da aplicação desenvolvida no NLW3 da Rocketseat
-<p>Com HTML entendemos o universo das tags. Com CSS tudo fica mais bonito,
-precismaos do CSS para estilizar o HTML. E para melhorar/possibilitar o
-funcionamento de nossas paginas usamos o JavaScript</p>
-<link href="https://rocketseat.com.br/">
-<img src="./public/code/initial-page.png">
+
+<p> No primeiro dia praticamos HTML e CSS.
+
+<img src="./public/code/init.png">
+<img src="./public/code/home.png">
+
+### Dia 02 - configurando paginas:
+- HTML
+- CSS
+- JavaScript
+
+<img src="./public/code/orphanege.png">
 
 
-
-#### Uma aplicação lindinha para iniciantes em programação
 <p>Um ponto muito positivo desta edição está num detalhe que parece pequeno,
 mas muito importante: Mobile First! Mesmo na Trilha Discovery fizemos um Layout
 lindo e responsivo. 
-<img src="./public/code/login-page.png">
 
-#### Começando com JavaScript na aplicação!
-<p> Na pagina de orfanatos, usamos uma blioteca para carregar o map e inciamos o uso
-de funções javascript.</p>
-<img src="./public/code/orfanatos-map.png">
+### Dia 03 - paginas de cadastro:
+- HTML
+- CSS
+- JavaScript
+
+<img src="./public/code/visita.png">
+<img src="./public/code/dados.png">
 
 
-#### Começando o backend da aplicação!
+
+### Dia 04/05 - backend da aplicação:
+- Javascript
+- HBS(html)
+
 <p>Para o backend da aplicação usamos:</p>
+- banco - sqlite
 - NodeJs
 - npm
 - express
 - nodemon
 - hbs
-#### Configurando o banco de dados! 
-- sqlite
+
 
