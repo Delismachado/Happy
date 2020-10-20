@@ -4,7 +4,9 @@
     "description": "- HTML - CSS - JavaScript ### Praticar em um Projeto  (Para dicas de projetos, veja os canais: Rocketseat, Felipe Deschampes, Alura online)! #### Pagina inical da aplicação desenvolvida no NLW3 da Rocketseat <p>Com HTML entendemos o universo das tags. Com CSS tudo fica mais bonito, precismaos do CSS para estilizar o HTML. E para melhorar/possibilitar o funcionamento de nossas paginas usamos o JavaScript</p> <link href=\"https://rocketseat.com.br/\"> <img src=\"/code/initial-page.png\">",
     "main": "index.js",
     "scripts": {
-        "start": "nodemon src/server.js"
+        "start": "nodemon src/server.js",
+        "npm run": "nodemon src/server.js"
+
     },
     "repository": {
         "type": "git",
@@ -22,5 +24,6 @@
         "hbs": "^4.1.1",
         "nodemon": "^2.0.5",
         "sqlite-async": "^1.1.0"
+
     }
 }
